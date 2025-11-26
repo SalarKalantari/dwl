@@ -162,13 +162,9 @@ static const Key keys[] = {
   { 0, XKB_KEY_XF86AudioLowerVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-") },
   { 0, XKB_KEY_XF86AudioMute,        spawn, SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") },
 
-  { 0, XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("xbacklight -inc 5") },
-  { 0, XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("xbacklight -dec 5") },
+  // { 0, XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("xbacklight -inc 5") },
+  // { 0, XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("xbacklight -dec 5") },
 
-  // Volume
-  { 0, XKB_KEY_XF86AudioRaiseVolume, spawn, SHCMD("pamixer --increase 5") },
-  { 0, XKB_KEY_XF86AudioLowerVolume, spawn, SHCMD("pamixer --decrease 5") },
-  { 0, XKB_KEY_XF86AudioMute,        spawn, SHCMD("pamixer --toggle-mute") },
 
   // Brightness
   { 0, XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
