@@ -166,13 +166,13 @@ static const Key keys[] = {
   { 0, XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("xbacklight -dec 5") },
 
   // Volume
-  { 0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pamixer --increase 5") },
-  { 0, XF86XK_AudioLowerVolume, spawn, SHCMD("pamixer --decrease 5") },
-  { 0, XF86XK_AudioMute,        spawn, SHCMD("pamixer --toggle-mute") },
+  { 0, XKB_KEY_XF86AudioRaiseVolume, spawn, SHCMD("pamixer --increase 5") },
+  { 0, XKB_KEY_XF86AudioLowerVolume, spawn, SHCMD("pamixer --decrease 5") },
+  { 0, XKB_KEY_XF86AudioMute,        spawn, SHCMD("pamixer --toggle-mute") },
 
   // Brightness
-  { 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
-  { 0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-") },
+  { 0, XKB_KEY_XF86MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
+  { 0, XKB_KEY_XF86MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-") },
 
 
   { 0, XKB_KEY_XF86AudioPlay,  spawn, SHCMD("playerctl play-pause") },
@@ -180,25 +180,17 @@ static const Key keys[] = {
   { 0, XKB_KEY_XF86AudioNext,  spawn, SHCMD("playerctl next") },
   { 0, XKB_KEY_XF86AudioPrev,  spawn, SHCMD("playerctl previous") },
 
-  { 0, XKB_KEY_AudioPlay,  spawn, SHCMD("playerctl play-pause") },
-  { 0, XKB_KEY_AudioStop,  spawn, SHCMD("playerctl stop") },
-  { 0, XKB_KEY_AudioNext,  spawn, SHCMD("playerctl next") },
-  { 0, XKB_KEY_AudioPrev,  spawn, SHCMD("playerctl previous") },
 
   { 0, XKB_KEY_Print,          spawn, SHCMD("grim ~/Pictures/screenshot-$(date +%s).png") },
   { WLR_MODIFIER_SHIFT, XKB_KEY_Print, spawn, SHCMD("slurp | grim -g - ~/Pictures/screenshot-$(date +%s).png") },
 
   { 0, XKB_KEY_XF86ScreenSaver, spawn, SHCMD("waylock") },
-  { 0, XKB_KEY_ScreenSaver, spawn, SHCMD("waylock") },
   { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_l, spawn, SHCMD("waylock") },
 
   { 0, XKB_KEY_XF86TouchpadToggle, spawn, SHCMD("toggle-touchpad") },
   { 0, XKB_KEY_XF86WLAN, spawn, SHCMD("rfkill toggle wifi") },
   { 0, XKB_KEY_XF86Bluetooth, spawn, SHCMD("rfkill toggle bluetooth") },
 
-  { 0, XKB_KEY_TouchpadToggle, spawn, SHCMD("toggle-touchpad") },
-  { 0, XKB_KEY_WLAN, spawn, SHCMD("rfkill toggle wifi") },
-  { 0, XKB_KEY_Bluetooth, spawn, SHCMD("rfkill toggle bluetooth") },
 
 	TAGKEYS(          XKB_KEY_1, XKB_KEY_exclam,                     0),
 	TAGKEYS(          XKB_KEY_2, XKB_KEY_at,                         1),
