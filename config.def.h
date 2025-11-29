@@ -62,9 +62,9 @@ static const struct xkb_rule_names xkb_rules = {
 	*/
   .rules = "evdev",
   .model = "pc105",
-  .layout = "us",
-  .variant = "",
-  .options = "caps:swapescape",
+  .layout = "us,ir",
+  .variant = ",",
+  .options = "caps:swapescape,grp:alt_shift_toggle",
 };
 
 static const int repeat_rate = 25;
