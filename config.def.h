@@ -53,9 +53,9 @@ static const MonitorRule monrules[] = {
 	{ "eDP-1",    0.5f,  1,      2,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 	*/
 	/* defaults */
-	// { "eDP-1",      0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   780,  2168 },
-	// { "DP-3",       0.60f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   0,  0 },
-	// { "DP-4",       0.60f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   0,  0 },
+	{ "eDP-1",      0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   780,  2168 },
+	{ "DP-3",       0.60f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   0,  0 },
+	{ "DP-4",       0.60f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   0,  0 },
 	{ NULL,         0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 };
 
